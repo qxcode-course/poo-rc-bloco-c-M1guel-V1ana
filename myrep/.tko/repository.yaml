@@ -12,7 +12,7 @@ sources:
   type: clone
   branch: master
   cache_path: /home/miguel/atividadelistapoo/poo-rc-bloco-c-M1guel-V1ana/myrep/.tko/cache/poo/Readme.md
-  cache_timestamp: '2025-11-07 20:54:36'
+  cache_timestamp: '2025-11-08 23:20:42'
   filters:
   - listas
 expanded:
@@ -26,4 +26,4 @@ flags:
   graph: 0
   xray: 0
 lang: py
-selected: poo@array
+selected: poo@budega
