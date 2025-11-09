@@ -8,11 +8,11 @@ sources:
   cache_timestamp: ''
   filters: null
 - database: poo
-  link: /home/miguel/atividadelistapoo/poo-rc-bloco-c-M1guel-V1ana/myrep/.tko/cache/poo/Readme.md
+  link: https://github.com/qxcodepoo/arcade.git
   type: clone
   branch: master
-  cache_path: /home/miguel/atividadelistapoo/poo-rc-bloco-c-M1guel-V1ana/myrep/.tko/cache/poo/Readme.md
-  cache_timestamp: '2025-11-09 11:58:56'
+  cache_path: ''
+  cache_timestamp: '2025-11-09 19:20:56'
   filters:
   - listas
 expanded:
@@ -23,7 +23,7 @@ flags:
   quests: 0
   tracks: 0
   tasks: 0
-  graph: 1
+  graph: 0
   xray: 0
 lang: py
 selected: poo@budega

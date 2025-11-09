@@ -20,27 +20,27 @@ class Market:
         caixas = ", ".join([str(x) if x else "-----" for x in self.caixas])
         espera = ", ".join([str(x) for x in self.espera])
 
-        return f"Caixas: [{caixas}]\nEspera:[{espera}]"
+        return f"Caixas: [{caixas}]\nEspera: [{espera}]"
     
     def arrive(self, cliente : Cliente):
-        self.espera.append(Cliente)
+        self.espera.append(cliente)
 
     def call(self, index: int):
         if index < 0 or index >= len(self.caixas):
             print("index invalido")
             return
         if self.caixas[index] is not None:
-            print("caixa ocupado")
+            print("fail: caixa ocupado")
             return
         if len(self.espera) == 0:
-            print("ninguem esperando")
+            print("fail: sem clientes")
             return
         
-        self.caixas[index] = self.espera[0]
+        self.caixas[index] = self.espera.pop(0)
     
     def finish(self, index: int ) -> Cliente | None:
         if index < 0 or index >= len(self.caixas):
-            print("fail: caixa vazio")
+            print("fail: caixa inexistente")
             return None
         if self.caixas[index] is None:
             print("fail: caixa vazio")
@@ -50,7 +50,7 @@ class Market:
         return aux
 
 def main():
-    mercado = Market()
+    mercado = None
 
     while True:
         line = input()
@@ -64,4 +64,14 @@ def main():
         if args[0] == "init":
             qtd = int(args[1])
             mercado = Market(qtd)
+        if args[0] == "arrive":
+            nome = args[1]
+            mercado.arrive(Cliente(nome))
+        if args[0] == "call":
+            index = int(args[1])
+            mercado.call(index)
+        if args[0] == "finish":
+            index = int(args[1])
+            mercado.finish(index)
+
 main()
