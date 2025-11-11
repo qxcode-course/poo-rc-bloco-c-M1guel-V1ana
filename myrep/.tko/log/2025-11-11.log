@@ -1,0 +1,6 @@
+2025-11-11 19:49:14, MOVE, v:1, k:poo@budega, mode:PICK
+2025-11-11 19:49:17, MOVE, v:1, k:poo@budega, mode:BACK
+2025-11-11 19:51:45, SELF, v:1, k:poo@budega, rate:100, human:sim__meu_vscode_estava_comproblemas_e_solicitei_ajuda_ao_monitor_, iagen:para_entender_o_funcionamento_da_questao_e_como_funciona_algumas_funcoes_da_lista_, alone:5
+2025-11-11 19:53:25, MOVE, v:1, k:poo@lapiseira, mode:PICK
+2025-11-11 19:53:26, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:0, size:20
+2025-11-11 19:53:28, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:0

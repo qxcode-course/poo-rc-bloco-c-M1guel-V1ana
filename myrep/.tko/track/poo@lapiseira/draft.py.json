@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-11_19-53-26",
+            "content": "class Grafite:\n    def __init__(self, calibre: float, dureza: str, tamanho: int):\n        self.calibre = calibre\n        self.dureza = dureza\n        self.tamanho = tamanho \n\n    def __str__(self):\n        return f\"{self.calibre}: {self.dureza}: {self.calibre}\"\nclass Lapseira:\n    def __init__(self, calibre : float):\n        self.calibre = calibre \n        self.ponta: Grafite| None = None \n        self.tambor: list[Grafite] = []\n\n    def __str__(self):\n        bico = str(self.calibre) if self.ponta else \"vazio\"\n        tambor = \", \".join(str(g) for g in self.tambor)\n        return f\"calibre: {}\"\n\n\n",
+            "lines": "20"
+        }
+    ]
+}

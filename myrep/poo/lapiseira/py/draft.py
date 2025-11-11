@@ -15,6 +15,6 @@ class Lapseira:
     def __str__(self):
         bico = str(self.calibre) if self.ponta else "vazio"
         tambor = ", ".join(str(g) for g in self.tambor)
-        return f"calibre: {}"
+        return f"calibre: {self.}"
 
 
