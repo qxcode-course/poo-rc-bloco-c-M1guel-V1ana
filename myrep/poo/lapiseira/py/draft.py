@@ -37,7 +37,35 @@ class Lapiseira:
         
         self.tambor.append(grafite)
         return True
+    def puxar(self):
+        if self.bico is not None:
+            print("fail: ja existe grafite no bico")
+            return 
+        if not self.tambor:
+            print("fail: tambor vazio ")
+            return 
+        self.bico = self.tambor.pop(0)
 
+    def remover(self):
+        if self.bico is None:
+            print("fail: nao existe grafite no bico")
+            return
+        self.bico = None
+    def escrever(self):
+        if self.bico is None:
+            print("fail: nao existe grafite no bico")
+            return
+        gasto = self.bico.gastarFolha()
+
+        if self.bico.tamanho <= 10 :
+            self.bico = None 
+            print("fail: garfite pequeno demais")
+            return
+        if self.bico.tamanho - gasto <= 10:
+            self.bico = None 
+            return
+        self.bico.tamanho -= gasto
+        print(f"escreveu uma folha, grafite com{self.bico.tamanho}")
 
 def main():
     lapinho = None
@@ -65,6 +93,16 @@ def main():
                 print("fail: lapiseira nao iniciada")
             elif not lapinho.inserir(grafite):
                 print("fail: calibre incompatível")
+        
         elif args[0] == "pull":
-            
+            if lapinho is None:
+                print("fail: lapiseira nao iniciada")
+            else:
+                lapinho.puxar()
+
+        elif args[0] == "remove":
+            lapinho.remover()
+        elif args[0] == "write":
+            lapinho.escrever()
+
 main()
