@@ -1,0 +1,84 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-13_16-54-44",
+            "content": "@@ -393,337 +393,4 @@\n %7D%22%0A%0A\n-class Trampoline:%0A    def __init__(self):%0A        self.playing: list%5BKid%5D = %5B%5D%0A        self.waiting: list%5BKid%5D = %5B%5D%0A    %0A    def removeFromList(self, name: str, list_k : list%5BKid%5D) -%3E Kid %7C None:%0A        for i, k in enumerate(list_k):%0A            if k.getName() == name:%0A                return list_k.pop(i)%0A        return None %0A    \n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-11-13_17-05-34",
+            "content": "@@ -726,970 +726,4 @@\n     \n-%0A    def arrive(self, kid: Kid):%0A        self.waiting.insert(0, kid) # inserir um elemento em uma posi%C3%A7%C3%A3o especifica da lista%0A%0A    def enter(self):%0A        if len(self.waiting) %3E 10:%0A            kid = self.playing.pop()%0A            self.playing.insert(0, kid)%0A%0A    def leave(self):%0A        if len(self.playing) %3E 0:%0A            kid = self.playing.pop()%0A            self.playing.insert(0, kid)%0A%0A%0A    def __str__(self) -%3E str:%0A        espera = %22, %22.join(str(x) for x in self.waiting)%0A        jogar = %22, %22.join(str(x) for x in self.playing)%0A%0A        return f%22%5B%7Bespera%7D%5D =%3E %5B%7Bjogar%7D%5D%22%0A    %0Adef main()%0A    pular = Trampoline()%0A%0A    while True:%0A        line = input()%0A        print(%22$%22 + line)%0A        args: list%5Bstr%5D = line.split(%22 %22)%0A%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A        elif args%5B0%5D == %22show%22:%0A            print(pular)%0A        elif args%5B0%5D == %22arrive%22:%0A            n = args%5B1%5D%0A            a = int(args%5B2%5D)%0A%0A            pular.arrive(Kid(n, a))%0Amain()\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-11-13_17-46-23",
+            "content": "@@ -1318,17 +1318,16 @@\n f main()\n-:\n %0A    pul\n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-11-13_17-46-32",
+            "content": "@@ -1687,80 +1687,8 @@\n a))%0A\n-        elif args%5B0%5D == %22enter%22:%0A            pular.enter()%0A            %0A\n main\n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-11-13_17-59-21",
+            "content": "@@ -944,10 +944,8 @@\n pop(\n--1\n )%0A  \n@@ -1742,15 +1742,27 @@\n enter()%0A\n+            \n %0Amain()\n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-11-13_18-07-16",
+            "content": "@@ -973,15 +973,18 @@\n ing.\n-append(\n+insert(0, \n kid)\n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-11-13_18-08-01",
+            "content": "@@ -897,24 +897,25 @@\n .waiting) %3E \n+1\n 0:%0A         \n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-11-13_18-12-37",
+            "content": "@@ -923,28 +923,28 @@\n  kid = self.\n-wait\n+play\n ing.pop(-1)%0A\n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-11-13_18-13-13",
+            "content": "@@ -964,34 +964,31 @@\n elf.playing.\n-insert(0, \n+append(\n kid)%0A%0A    de\n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-11-13_18-14-49",
+            "content": "@@ -1066,34 +1066,32 @@\n elf.playing.pop(\n--1\n )%0A            se\n@@ -1085,36 +1085,36 @@\n            self.\n-wait\n+play\n ing.insert(0, ki\n@@ -1746,67 +1746,8 @@\n er()\n-%0A        elif args%5B0%5D == %22leave%22:%0A            pular.leave()\n %0A%0Ama\n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-11-13_18-16-13",
+            "content": "@@ -1809,109 +1809,8 @@\n ()%0A%0A\n-        elif args%5B0%5D == %22remove%22:%0A            n = args%5B1%5D%0A%0A            pular.removeFromList(Kid(n))%0A%0A\n main\n",
+            "lines": "73"
+        },
+        {
+            "label": "2025-11-13_18-20-16",
+            "content": "@@ -727,226 +727,8 @@\n    %0A\n-    def removerKid(self, name: str) -%3E Kid %7C None:%0A        kid = self.removeFromList(name, self.waiting)%0A%0A        if kid is not None:%0A            return kid %0A        return self.removeFromList(name, self.waiting)%0A    %0A\n     \n@@ -1855,32 +1855,33 @@\n     n = args%5B1%5D%0A\n+%0A\n             pula\n@@ -1892,18 +1892,24 @@\n move\n-r\n+FromList(\n Kid(n)\n-%0A%0A%0A\n+)\n %0A%0Ama\n",
+            "lines": "78"
+        },
+        {
+            "label": "2025-11-13_18-32-46",
+            "content": "@@ -815,28 +815,28 @@\n (name, self.\n-play\n+wait\n ing)%0A%0A      \n@@ -923,28 +923,28 @@\n (name, self.\n-play\n+wait\n ing)%0A    %0A  \n",
+            "lines": "87"
+        },
+        {
+            "label": "2025-11-13_18-34-06",
+            "content": "@@ -815,28 +815,28 @@\n (name, self.\n-wait\n+play\n ing)%0A%0A      \n",
+            "lines": "87"
+        },
+        {
+            "label": "2025-11-13_18-36-10",
+            "content": "@@ -2092,22 +2092,16 @@\n         \n- kid =\n  pular.r\n@@ -2118,94 +2118,8 @@\n n)%0A%0A\n-            if kid is None:%0A                print(f%22fail: %7Bn%7D nao esta no pula-pula%22)%0A\n %0A%0A%0Am\n",
+            "lines": "87"
+        },
+        {
+            "label": "2025-11-13_18-38-30",
+            "content": "class Kid:\n    def __init__(self, name: str, age: int):\n        self.name = name \n        self.age = age \n\n    def getName(self):\n        return self.name\n    def getAge(self):\n        return self.age\n    \n    def setName(self, name : str):\n        self.name = name \n    def setAge(self, age: int):\n        self.age = age \n\n    def __str__(self) -> str:\n        return f\"{self.name}:{self.age}\"\n\nclass Trampoline:\n    def __init__(self):\n        self.playing: list[Kid] = []\n        self.waiting: list[Kid] = []\n    \n    def removeFromList(self, name: str, list_k : list[Kid]) -> Kid | None:\n        for i, k in enumerate(list_k):\n            if k.getName() == name:\n                return list_k.pop(i)\n        return None \n    \n    def removerKid(self, name: str) -> Kid | None:\n        kid = self.removeFromList(name, self.waiting)\n\n        if kid is not None:\n            return kid \n        return self.removeFromList(name, self.playing)\n    \n    def arrive(self, kid: Kid):\n        self.waiting.insert(0, kid) # inserir um elemento em uma posi\u00e7\u00e3o especifica da lista\n\n    def enter(self):\n        if len(self.waiting) > 0:\n            kid = self.waiting.pop(-1)\n            self.playing.insert(0, kid)\n\n    def leave(self):\n        if len(self.playing) > 0:\n            kid = self.playing.pop(-1)\n            self.waiting.insert(0, kid)\n\n\n    def __str__(self) -> str:\n        espera = \", \".join(str(x) for x in self.waiting)\n        jogar = \", \".join(str(x) for x in self.playing)\n\n        return f\"[{espera}] => [{jogar}]\"\n    \ndef main():\n    pular = Trampoline()\n\n    while True:\n        line = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n\n\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(pular)\n        elif args[0] == \"arrive\":\n            n = args[1]\n            a = int(args[2])\n\n            pular.arrive(Kid(n, a))\n        elif args[0] == \"enter\":\n            pular.enter()\n        elif args[0] == \"leave\":\n            pular.leave()\n\n        elif args[0] == \"remove\":\n            n = args[1]\n            kid = pular.removerKid(n)\n\n            if kid is None:\n                print(f\"fail: {n} nao esta no pula-pula\")\n\n\n\nmain()",
+            "lines": "89"
+        }
+    ]
+}
