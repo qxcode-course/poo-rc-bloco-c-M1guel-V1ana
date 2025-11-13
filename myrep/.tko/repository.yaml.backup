@@ -12,7 +12,7 @@ sources:
   type: clone
   branch: master
   cache_path: ''
-  cache_timestamp: '2025-11-12 20:23:25'
+  cache_timestamp: '2025-11-13 02:14:40'
   filters:
   - listas
 expanded:
@@ -22,7 +22,8 @@ tasks:
   poo@budega: '{rate:100, human:sim__meu_vscode_estava_comproblemas_e_solicitei_ajuda_ao_monitor_,
     iagen:para_entender_o_funcionamento_da_questao_e_como_funciona_algumas_funcoes_da_lista_,
     alone:5}'
-  poo@lapiseira: '{rate:35}'
+  poo@lapiseira: '{rate:100, human:sempre_programo_junto_com_os_amigos, iagen:_so_pra_ter_ideia_do_que_fazer,
+    guide:saber_como_utiliza_o_join_e_o_pop, alone:6}'
 flags:
   quests: 0
   tracks: 0
@@ -30,4 +31,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@lapiseira
+selected: poo@pula-pula

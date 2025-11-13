@@ -51,21 +51,28 @@ class Lapiseira:
             print("fail: nao existe grafite no bico")
             return
         self.bico = None
+    
     def escrever(self):
         if self.bico is None:
             print("fail: nao existe grafite no bico")
             return
+        
         gasto = self.bico.gastarFolha()
 
         if self.bico.tamanho <= 10 :
             self.bico = None 
-            print("fail: garfite pequeno demais")
+            print("fail: tamanho insuficiente")
             return
-        if self.bico.tamanho - gasto <= 10:
-            self.bico = None 
+        
+        novo_tamanho = self.bico.tamanho - gasto
+
+        if novo_tamanho < 10:
+            print("fail: folha incompleta")
+            self.bico.tamanho = 10  
             return
-        self.bico.tamanho -= gasto
-        print(f"escreveu uma folha, grafite com{self.bico.tamanho}")
+        self.bico.tamanho = novo_tamanho
+        
+
 
 def main():
     lapinho = None

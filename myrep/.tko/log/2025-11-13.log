@@ -1,0 +1,12 @@
+2025-11-13 02:16:33, MOVE, v:1, k:poo@lapiseira, mode:PICK
+2025-11-13 02:16:34, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:71
+2025-11-13 02:37:59, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:71, size:111
+2025-11-13 02:38:17, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:85, size:111
+2025-11-13 02:43:29, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:71, size:111
+2025-11-13 02:44:20, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:71, size:111
+2025-11-13 02:44:30, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:85, size:112
+2025-11-13 02:49:57, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:85, size:113
+2025-11-13 02:56:28, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:92, size:115
+2025-11-13 02:57:13, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:100, size:115
+2025-11-13 03:04:35, MOVE, v:1, k:poo@lapiseira, mode:BACK
+2025-11-13 03:06:21, SELF, v:1, k:poo@lapiseira, rate:100, human:sempre_programo_junto_com_os_amigos, iagen:_so_pra_ter_ideia_do_que_fazer, guide:saber_como_utiliza_o_join_e_o_pop, alone:6
