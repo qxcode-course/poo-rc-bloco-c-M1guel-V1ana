@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-15_17-31-26",
+            "content": "@@ -101,17 +101,16 @@\n  = phone\n- \n %0A%0A    de\n@@ -144,10 +144,216 @@\n turn\n-%22%0A    \n+ f%22%7Bself.id%7D:%7Bself.phone%7D%22%0A    %0A    def getID(self):%0A        return self.id%0A    %0A    def getPhone(self):%0A        return self.phone%0A    %0A    def setID(self, id: int):%0A        self.id = id %0A    def setPhone(self, )\n",
+            "lines": "17"
+        },
+        {
+            "label": "2025-11-15_17-32-50",
+            "content": "@@ -145,659 +145,10 @@\n turn\n- f%22%7Bself.id%7D:%7Bself.phone%7D%22%0A    %0A    def getID(self):%0A        return self.id%0A    def getPhone(self):%0A        return self.phone %0A    %0A    def setID(self, id: str):%0A        self.id = id %0A    def setPhone(self, fone: int):%0A        self.phone = fone %0A%0A%0Aclass Theather:%0A    def __init__(self, capacity: int):%0A        self.__capacity = capacity%0A        self.__seats: list%5BCliente %7C None%5D = %5BNone%5D * capacity%0A%0A    def search(self, id: int) -%3E int:%0A        for i, c in enumerate(self.__seats):%0A            if c is not None and c.getID() == id:%0A                return i %0A        %0A        return -i%0A%0A%0A%0A    def reserve(self, id: str, phone: int, index: int ) -%3E bool:\n+%22%0A    \n",
+            "lines": "8"
+        },
+        {
+            "label": "2025-11-15_17-46-53",
+            "content": "@@ -733,115 +733,8 @@\n  -i%0A\n-    %0A    def verifyIndex(self, index : int) -%3E bool:%0A        return 0 %3C= index %3C self.__capacity%0A    %0A    %0A\n %0A%0A%0A \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-11-15_18-01-06",
+            "content": "class Cliente:\n    def __init__(self, id: str, phone: int):\n        self.id = id \n        self.phone = phone \n\n    def __str__(self):\n        return f\"{self.id}:{self.phone}\"\n    \n    def getID(self):\n        return self.id\n    def getPhone(self):\n        return self.phone \n    \n    def setID(self, id: str):\n        self.id = id \n    def setPhone(self, fone: int):\n        self.phone = fone \n\n\nclass Theather:\n    def __init__(self, capacity: int):\n        self.__capacity = capacity\n        self.__seats: list[Cliente | None] = [None] * capacity\n\n    def search(self, id: int) -> int:\n        for i, c in enumerate(self.__seats):\n            if c is not None and c.getID() == id:\n                return i \n        \n        return -i\n    \n    def verifyIndex(self, index : int) -> bool:\n        return 0 <= index < self.__capacity\n    \n    \n\n\n\n    def reserve(self, id: str, phone: int, index: int ) -> bool:",
+            "lines": "39"
+        }
+    ]
+}
