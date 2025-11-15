@@ -2,7 +2,7 @@
     "patches": [
         {
             "label": "2025-10-29_11-02-13",
-            "content": "",
+            "content": "@@ -1,643 +0,0 @@\n-import numpy as np%0Abolo = np.random.randint(1, 11, 9)%0A%0Adef buscar_elemento(a, c):%0A    if c in a:%0A        return f%22%7Bc%7D est%C3%A1 na lista%22%0A    else:%0A        return f%22%7Bc%7D n%C3%A3o est%C3%A1 na lista%22%0Am = %5B%22amor%22, %22paz%22, %22vida%22%5D%0Al = %5B%22ma%C3%A7a%22, %22banana%22, %22ovo%22%5D%0Al2 = list(%5B2, 2, 4%5D)%0Al2.append(3)%0Al.append(%22pera%22)%0Al.remove(%22pera%22)%0Al2.pop(2)%0Afofin = %22-%22.join(l)%0Aprint (fofin)%0Aprint(l)%0Aprint(l2)%0Aprint(bolo)%0Apuf = m%5B0%5D%0Ac = int(input())%0Aa = %5B%5D%0Afor _ in range(1, c+1):%0A    a.append(_)%0A%0Afor i in a:%0A    print(i)%0A%0Afor i in range(len(a)):%0A    print(i)%0A%0Afor i, v in enumerate(a):%0A    print(i, v)%0A%0Aameba = buscar_elemento(a, c)%0Aprint(ameba)%0A%0Aprint(a)%0Aprint(puf)%0A%0Aprint(%22oi%22)\n",
             "lines": "0"
         }
     ]
