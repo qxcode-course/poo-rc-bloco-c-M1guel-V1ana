@@ -1,3 +1,21 @@
+class Player:
+    def __init__(self, label: int, pos: int, free: bool):
+        self.label = label
+        self.pos = pos 
+        self.free = free
+
+    def getLabel(self):
+        return self.label
+    def getPos(self):
+        return self.pos 
+    
+    def setPos(self, pos: int):
+        self.pos = pos 
+        
+
+
+
+
 def main():
     tabu = None
 

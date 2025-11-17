@@ -14,3 +14,6 @@
 2025-11-17 19:29:18, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0
 2025-11-17 19:33:42, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0, size:13
 2025-11-17 19:34:04, MOVE, v:1, k:poo@tabuleiro, mode:BACK
+2025-11-17 19:34:39, MOVE, v:1, k:poo@tabuleiro, mode:PICK
+2025-11-17 19:34:40, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0
+2025-11-17 19:54:58, MOVE, v:1, k:poo@tabuleiro, mode:BACK
