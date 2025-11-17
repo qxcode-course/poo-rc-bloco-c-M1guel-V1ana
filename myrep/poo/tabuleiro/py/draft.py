@@ -11,6 +11,7 @@ class Player:
     
     def setPos(self, pos: int):
         self.pos = pos 
+    def set
         
 
 
