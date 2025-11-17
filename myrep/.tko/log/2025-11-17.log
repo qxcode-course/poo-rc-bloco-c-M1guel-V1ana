@@ -1,0 +1,16 @@
+2025-11-17 19:26:18, MOVE, v:1, k:poo@lapiseira, mode:PICK
+2025-11-17 19:26:25, MOVE, v:1, k:poo@lapiseira, mode:BACK
+2025-11-17 19:26:34, SELF, v:1, k:poo@lapiseira, rate:100, human:sempre_programo_junto_com_os_amigos, iagen:_so_pra_ter_ideia_do_que_fazer, guide:saber_como_utiliza_o_join_e_o_pop, alone:7
+2025-11-17 19:26:34, MOVE, v:1, k:poo@lapiseira, mode:PICK
+2025-11-17 19:26:35, MOVE, v:1, k:poo@lapiseira, mode:BACK
+2025-11-17 19:26:37, MOVE, v:1, k:poo@budega, mode:PICK
+2025-11-17 19:26:41, MOVE, v:1, k:poo@budega, mode:BACK
+2025-11-17 19:26:50, SELF, v:1, k:poo@budega, rate:100, human:sim__meu_vscode_estava_comproblemas_e_solicitei_ajuda_ao_monitor_, iagen:para_entender_o_funcionamento_da_questao_e_como_funciona_algumas_funcoes_da_lista_, alone:7
+2025-11-17 19:26:55, MOVE, v:1, k:poo@tabuleiro, mode:DOWN
+2025-11-17 19:26:58, MOVE, v:1, k:poo@tabuleiro, mode:PICK
+2025-11-17 19:29:16, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0, size:0
+2025-11-17 19:29:17, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0
+2025-11-17 19:29:17, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0
+2025-11-17 19:29:18, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0
+2025-11-17 19:33:42, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0, size:13
+2025-11-17 19:34:04, MOVE, v:1, k:poo@tabuleiro, mode:BACK

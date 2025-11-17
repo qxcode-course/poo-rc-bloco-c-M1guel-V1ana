@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-17_19-29-16",
+            "content": "@@ -1,246 +0,0 @@\n-def main():%0A    tabu = None%0A%0A    while True:%0A        line = input()%0A        print(%22$%22 + line)%0A        args: list%5Bstr%5D = line.split(%22 %22)%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A        elif args%5B0%5D == %22show%22:%0A            print(tabu)%0Amain()\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-11-17_19-33-42",
+            "content": "def main():\n    tabu = None\n\n    while True:\n        line = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(tabu)\nmain()",
+            "lines": "13"
+        }
+    ]
+}
